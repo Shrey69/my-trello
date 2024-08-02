@@ -28,7 +28,7 @@ const Sidebar = () => {
         setShowpop(!showpop);
     }
     return (
-        <div className={`bg-[#121417] h-[calc(100vh-3rem)] border-r border-r-[#9fadbc29] transition-all duration-500 flex-shrink-0 ${collapsed ? 'w-[42px]' : 'w-[280px]'}`} >
+        <div className={`bg-[#121417] h-[calc(100vh-3rem)] border-r border-r-[#9fadbc29]  transition-all duration-500 flex-shrink-0 ${collapsed ? 'w-[42px]' : 'w-[280px]'}`} >
             {collapsed && (
                 <div className='p-2'>
                     <button onClick={() => setCollapsed(!collapsed)} className='hover:bg-slate-600 bg-slate-300 p-2 rounded-sm'>

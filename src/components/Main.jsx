@@ -50,7 +50,7 @@ const Main = () => {
     return (
         <div className='flex flex-col w-full' style={{backgroundColor:`${bdata.bgcolor}`}}>
             <div className='p-3 bg-black flex justify-between w-full bg-opacity-50'>
-                <h2 className='text-lg'>{bdata.name}</h2>
+                <h2 className='text-gray-300 font-bold text-xl'>{bdata.name}</h2>
                 <div className='flex items-center justify-center'>
                     <button className='bg-gray-200 h-8 text-gray-800 px-2 py-1 mr-2 rounded flex justify-center items-center'>
                         <FiUserPlus size={16} className='mr-2'></FiUserPlus>
@@ -65,7 +65,7 @@ const Main = () => {
                    return <div key={ind} className='mr-3 w-60 h-fit rounded-md p-2 bg-black flex-shrink-0'>
                     <div className="list-body">
                         <div className='flex justify-between p-1'>
-                            <span>{x.title}</span>
+                            <span className='text-gray-300 font-bold'>{x.title}</span>
                             <button className='hover:bg-gray-500 p-1 rounded-sm'><FiMoreHorizontal size={16}></FiMoreHorizontal></button>
                         </div>
                         <Droppable droppableId={x.id}>

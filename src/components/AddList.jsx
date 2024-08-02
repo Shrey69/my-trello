@@ -26,13 +26,13 @@ const AddList = (props) => {
         <div>
             <div className="flex flex-col h-fit flex-shrink-0 mr-3 w-60 rounded-md p-2 bg-black">
             {show && <div>
-                <textarea value={list} onChange={(e)=>setlist(e.target.value)} className='p-1 w-full rounded-md border-2 bg-zinc-700 border-zinc-900' name="" id="" cols="30" rows="2" placeholder='Enter list Title...'></textarea>
+                <textarea value={list} onChange={(e)=>setlist(e.target.value)} className='p-1 w-full rounded-md border-2 bg-zinc-400 border-zinc-900' name="" id="" cols="30" rows="2" placeholder='Enter list Title...'></textarea>
                 <div className='flex p-1'>
                     <button onClick={()=>savelist()} className='p-1 rounded bg-sky-600 text-white mr-2'>Add list</button>
                     <button onClick={()=> closeBtn()} className='p-1 rounded hover:bg-gray-600'><BiX size={16}></BiX></button>
                 </div>
             </div>}
-            {!show && <button onClick={()=> setShow(!show)} className='flex p-1 w-full justify-center rounded items-center mt-1 hover:bg-gray-500 h-8'>
+            {!show && <button onClick={()=> setShow(!show)} className='flex p-1 w-full justify-center rounded items-center mt-1 bg-gray-300 hover:bg-gray-500 h-8'>
                 <BiPlus size={16}></BiPlus> Add a list
             </button>}
             </div>
