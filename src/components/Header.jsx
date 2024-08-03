@@ -8,9 +8,9 @@ const Header = () => {
          <img src={trello} alt="logo" className="w-80 h-7 pr-44 brightness-150" />
             </div>
             <div className="right flex items-center space-x-4">
-                <span className="font-semibold">Trello Workspace</span>
-                <img className='rounded-full cursor-pointer' src="https://placehold.co/28x28/png" alt="" />
-            </div>
+                <span className="font-semibold text-lg">Logout</span>
+           <Link to="/">     <img className='rounded-full cursor-pointer' src="https://placehold.co/28x28/png" alt="" />
+           </Link> </div>
        
     </div>
   )
